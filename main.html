@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+        .welcome{
+            text-align: center;
+            width: 100%;
+            font-weight:bolder;
+            font-size: 50px;
+            margin-top: 10%;
+            margin-bottom: 3%;
+        }
+
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			box-sizing: border-box;
+		}
+        .tit{
+			width: 40%;
+            color: #ffffff;
+			margin-right: 5%;
+            margin-left: 5%;
+			box-sizing: border-box;
+            font-size: xx-large;
+        }
+		.des {
+			width: 70%;
+			background-color: rgba(255, 255, 255, 0.5);
+			margin-right: 5%;
+            margin-left: 5%;
+			padding: 20px;
+			box-sizing: border-box;
+			border: 2px solid rgb(255, 132, 32, 0.781);
+			border-radius: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logo">E-Supervisor</div>
+		<ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="track.html">Track Attendance</a></li>
+			<li><a href="assign.html">Assign Tasks</a></li>
+			<li><a href="Chatroom.html">Chat Room</a></li>
+            <li><a href="OpenMeetingS.html">Meeting</a></li>
+			<li><a href="evaluate.html">Evaluate Trainee</a></li>
+		</ul>
+		<div class="search-bar">
+			<input type="text" placeholder="Type to text">
+			<input type="submit" value="Search">
+		</div>
+	</nav>
+    <div class="welcome">
+        <p>welcome <span style="color: rgb(255, 132, 32, 0.781);">Basmah</span></p>
+    </div>
+	<div class="container">
+        <p class="tit">Announcement</p>
+        <textarea class="des" name="des" id="des" cols="30" rows="10" placeholder="add description"></textarea>
+
+    </div>
+</body>
+</html>

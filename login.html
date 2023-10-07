@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(E.jpg);
+    background-size: cover;
+}
+
+.login{
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 550px;
+height: 350px;
+border: 1px  #3b3b3b;
+border-radius: 10px;
+padding: 40px;
+}
+.login:hover{
+    box-shadow: 3px 3px 50px #63dbff;
+}
+h2{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0;
+    color: #000000;
+}
+.input-text{
+    position: relative;
+    right: -50px;
+    margin: 20px 0;
+}
+
+.input-text input{
+    width: 80%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: none;
+    padding-left: 30px;
+    background-color: rgb(255, 246, 230);
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #d1d1d1;
+}
+/* .input-field input{
+    outline: none;
+
+    border-radius: 8px;
+    border: 1px solid #d1d1d1;
+} */
+
+.button{
+    width: 55%;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #ff7200;
+    border-radius: 15px;
+    padding: 6px;
+    background: transparent;
+    cursor: pointer;
+    position:relative;
+    bottom: -1%;
+    left: 22%;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+}
+
+span{
+background: #ff7200;
+width: 0%;
+height: 100%;
+border-radius: 25px;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: -1;
+transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border:none;
+    color: #000000;
+}
+a{
+    position: absolute;
+    bottom: 25%;
+    right: 15%;
+    
+}
+
+.link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    color: rgba(240, 248, 255, 0.776);
+    text-align: center;
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+}
+
+.sign{
+    color: #6f598e;
+    font-weight: bold;
+    position: absolute;
+    bottom: 15%;
+    left: 41%;
+}
+
+.font{
+    font-size: 18px;
+    color: #130f40;
+    margin: 5px 0;
+    font-weight: bold;
+}
+/*.font2{
+    margin-top: 30px;
+}*/
+
+.login_form #username_error,.login_form #pass_error{
+    margin-top: -18px;
+    width: 440px;
+    height: 25px;
+    font-size: 18px;
+    color: #c62828;
+    background: rgba(255, 189, 189, 0.607);
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #ef9a9a;
+    position: relative;
+    left: 9%;
+    display: none;
+}
+.invalid input{
+    border-color: #d93025;
+}
+.input-field .show-hide{
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #919191;
+    cursor: pointer;
+    padding: 3px;
+}
+.field .error{
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    color: #d93025;
+    font-size: 13px;
+    display: none;
+}
+.invalid .error{
+display: flex;
+
+}
+.error .error-icon{
+    margin-right: 6px;
+    font-size: 15px;
+}
+.create-password .error{
+    align-items: flex-start;
+}
+.create-password .error-icon{
+     margin-top: 4px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="login">
+        <h2> E-SUPERVISOR</h2>
+
+        <form class="login_form" method="post" name="formlogin" >
+
+        <div class="field email-field">
+        <div class="input-text">
+        <div class="font"> Username </div>
+        <input type="text" placeholder="Enter Your ID" name="username" required>
+        </div>
+        <span class="error email-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error text">Please enter a valid email</p>
+           </span>
+        </div>
+
+        <div class="field create-password">
+        <div class="input-text">
+        <div class="font font2"> Password </div>
+        <input type="password" placeholder="Enter Your Passsword" name="password" required>
+        <i class="bx bx-hide show-hide"></i>
+        </div>
+        <span class="error password-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error text">Please enter atleast 8 charatcer with numbers, symbol, small and
+                capital letter. </p>
+           </span>
+        </div>
+         
+
+        <div class="input-field">
+            <input type="submit" class="button"  value="login" >
+            
+         </div>
+        <!-- <button type="button"><span></span>login </button> -->
+        <p class="link">Don't have an account?</p>
+        <a class="sign" href="signup2.html">Sign up</a>
+
+        <!--   <div class="input-field button">
+            <input type="submit" value="Submit">
+         </div>
+         -->
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

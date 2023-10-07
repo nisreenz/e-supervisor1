@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Open meeting</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(E.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff6f00;
+    font-size: 30px;
+    font-family: Arial;
+    padding-left: 10px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px;
+    position: relative;
+    bottom: -11px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float:left;
+    display:-webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 25px;
+    margin-top: 30px;
+    font-size: 14px;
+    border: 1px solid #ffffff;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 3px 8px;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff9500;
+    
+}
+
+.search{
+    width: 320px;
+    float: left;
+    margin-left: 280px;
+    position: relative;
+    bottom: -11px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ffefe3;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background:#f47a1d;
+    border: 2px solid #ffdabd;
+    margin-top: 13px;
+    color: #000000;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #ffffff;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+    .content{
+        width: 700px;
+        height: auto;
+        margin: auto;
+        color: #fff;
+        position: relative;
+        bottom: -90px;
+        border: 1px solid rgb(255, 115, 0);
+        padding: 50px;
+        margin: 20px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: #ffdec576;
+       
+    }
+    
+    
+    
+    .content h1{
+        font-family: 'Times New Roman';
+        font-size: 30px;
+        padding-left: 20px;
+        margin-top: 1%;
+        letter-spacing: 2px;
+      
+    }
+    
+    
+    .text{
+       
+        width: 300px;
+        border: 1px solid rgb(255, 154, 82);
+        background-color: #ffedde66;
+        padding: 50px;
+        margin: 20px;
+        position: relative;
+        bottom: -10px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      .content3{
+    width: 800px;
+    height: 350px;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    top: 30px;
+    bottom: -90px;
+    padding: 50px;
+    margin: 20px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px; 
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #f6eae18e;
+}
+
+.meeting{
+    font-family: 'Times New Roman';
+    color: #000000;
+    font-size: 35px;
+    width: 950px;
+    height: 85px;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 5%;
+    letter-spacing: 2px;
+    position: relative;
+    top: -30px;
+    left: -110px;
+    text-align: center;
+}
+
+.button, .button2 {
+    width: 30%;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #f7f3ef;
+    background-color: #f7f3ef;
+    border-radius: 3px;
+    padding: 6px;
+    cursor: pointer;
+    text-align: center;
+    color: #070707;
+}
+.button:hover,.button2:hover{
+background-color: rgb(215, 212, 212);
+border:2px solid rgb(215, 212, 212);
+color: #171717;
+}
+.button{
+    position:absolute;
+    bottom: 65%;
+    left: 5%;
+}
+
+.button2{
+    position:absolute;
+    bottom: 45%;
+    left: 5%;
+}
+      </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">E-Supervisor</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="Mytask.html">MyTasks</a></li>
+                    <li><a href="home.html">TrackAttendance</a></li>
+                    <li><a href="Chatroom.html">ChatRoom</a></li>
+                    <li><a href="#">Meeting</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+                <div class="content3">
+                    <h1 class="meeting">Meeting</h1>
+                    <button class="button">Start meeting</button>
+                    <button class="button2"> Schedule meeting</button>
+                </div>
+            
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

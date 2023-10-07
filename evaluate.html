@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evaluate</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			box-sizing: border-box;
+		}
+        .tit{
+			width: 40%;
+			margin-right: 5%;
+            margin-left: 5%;
+			box-sizing: border-box;
+            margin-top: 10%;
+            font-size: xx-large;
+        }
+		.sec {
+			width: 40%;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 20px;
+			color: white;
+			background-color: rgba(255, 255, 255, 0.4);
+			margin-right: 5%;
+            margin-left: 5%;
+			box-sizing: border-box;
+			border: 2px solid rgb(255, 132, 32, 0.781);
+			border-radius: 10px;
+
+		}
+		.profile{
+			padding: 20px;
+			
+		}
+        .account{
+			border-radius: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 92%;
+            border: 2px solid rgb(0, 0, 0);
+			background-color: rgba(0, 0, 0, 0.5);
+        }
+		.second{
+			margin: 10px;
+			padding: 15px;
+			display: flex;
+			align-items: center;
+		}
+		img {
+			width: 50px;
+			margin-right: 10px;
+		}
+		.arrow {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		  }
+		  
+		  .circle-left,
+		  .circle-right {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 50px;
+			border: 2px solid rgb(255, 132, 32, 0.781);
+			border-radius: 50%;
+			background-color: rgba(0, 0, 0, 0.5);
+		  }
+		  
+		  .circle-left img,
+		  .circle-right img {
+			width: 50%;
+			height: auto;
+		  }
+		  
+		  
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logo">E-Supervisor</div>
+		<ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="track.html">Track Attendance</a></li>
+			<li><a href="assign.html">Assign Tasks</a></li>
+			<li><a href="Chatroom.html">Chat Room</a></li>
+            <li><a href="OpenMeetingS.html">Meeting</a></li>
+			<li><a href="evaluate.html">Evaluate Trainee</a></li>
+		</ul>
+		<div class="search-bar">
+			<input type="text" placeholder="Type to text">
+			<input type="submit" value="Search">
+		</div>
+	</nav>
+    <div class="container">
+        <div class="tit">
+            <p>Choose a trainee</p>
+        </div>
+        <div class="tit">
+            <p>Evaluate Trainee</p>
+        </div>
+    </div>
+	<div class="container">
+		<div class="sec profile">
+			<div class="account second">
+				<img src="profile.png" alt="profile photo">
+				<p>Nisreen saad alzhrani</p>
+			</div>
+			<div class="account second">
+				<img src="profile.png" alt="profile photo">
+				<p>Amal alhrisi</p>
+			</div>
+			<div class="account second">
+				<img src="profile.png" alt="profile photo">
+				<p>May almutiri</p>
+			</div>
+			<div class="arrow">
+				<div class="circle-left">
+				  <img src="left-arrow.png" alt="Left Arrow">
+				</div>
+				<div class="circle-right">
+				  <img src="right-arrow.png" alt="Right Arrow">
+				</div>
+			  </div>
+
+	</div>
+	<div class="sec">
+		<h3>Name</h3>
+        <div class="account">
+			<p>Nisreen saad alzhrani</p>
+        </div>
+		<h3>Id</h3>
+        <div class="account">
+			<p>11107445788</p>
+        </div>
+		<h3>Evaluate trainee</h3>
+        <div class="account">
+			<p>add description</p>
+        </div>
+
+	</div>
+
+</div>
+</body>
+</html>

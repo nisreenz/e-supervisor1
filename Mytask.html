@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MyTasks</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(E.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+ 
+}
+
+/* Style the header */
+/*.header {
+  background-color: #fefefe7f;
+  padding: 20px;
+  text-align: center;
+  color: #f3af7e;
+}*/
+
+/* Style the top navigation bar */
+.logo{
+  overflow: hidden;
+    color: #ff6f00;
+    font-size: 30px;
+    font-family: Arial;
+    padding-left: 10px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px;
+    position: relative;
+    bottom: -11px;
+}
+ul{
+    float:left;
+    display:-webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left:30px;
+    margin-top: 20px;
+    font-size: 14px;
+    border: 1px solid #ffffff;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 3px 8px;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff9500;
+    
+}
+/* Style the topnav links */
+.search{
+    width: 320px;
+    float: left;
+    margin-left: 900px;
+    position: relative;
+    bottom: 60px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ffefe3;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background:#f47a1d;
+    border: 2px solid #ffdabd;
+    margin-top: 13px;
+    color: #000000;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #ffffff;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+
+  color: rgb(248, 122, 3);
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+ 
+
+
+}
+.column h2{
+  font-size: x-larger;
+  color: #e0c093;
+}
+.column p {
+  width: 500px;
+  height: 80px;
+    border: 1px solid #ff8a54;
+  border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size:20px;
+    text-align: left;
+}
+.column p{
+    color: #5e5e5e;
+    background-color: #fff1e681;
+    position: relative;
+   bottom: 10px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+ 
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+  <h2 class="logo">My Tasks</h2>
+</div>
+<div class="menu">
+  <ul>
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="Mytask.html">MyTasks</a></li>
+      <li><a href="home.html">TrackAttendance</a></li>
+      <li><a href="Chatroom.html">ChatRoom</a></li>
+      <li><a href="joinMeeting.html">Meeting</a></li>
+      <li><a href="login.html">Logout</a></li>
+  </ul>
+</div>
+<div class="search">
+    <input class="srch" type="search" name="" placeholder="Type To text">
+    <a href="#"> <button class="btn">Search</button></a>
+</div>
+<div class="row">
+  <div class="column">
+    <h2>Tasks</h2>
+    <p><a href="up.html">Final Project</a><br> 
+        Due Date:1/6/2023</p>
+  </div>
+  
+  
+</div>
+
+</body>
+</html>
